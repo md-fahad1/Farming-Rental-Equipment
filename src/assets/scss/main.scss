@@ -1,0 +1,7 @@
+// @import "layout/header";
+// @import "layout/outer-container";
+// @import "layout/sidebar";
+// main.scss
+@use 'layout/header';
+@use 'layout/outer-container';
+@use 'layout/sidebar';

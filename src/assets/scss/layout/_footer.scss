@@ -1,0 +1,11 @@
+/* -----------------------------------
+** Footer
+-------------------------------------*/
+.footer{
+  /* Display & Box Model */
+  padding: pxtorem(8px, $font-size-base) pxtorem(10px, $font-size-base);
+  height: $footer-height;
+}
+/* -----------------------------------
+** End Footer
+-------------------------------------*/

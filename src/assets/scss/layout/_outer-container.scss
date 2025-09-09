@@ -1,0 +1,27 @@
+/* -----------------------------------
+** Main Content
+-------------------------------------*/
+$sidebarWidth: 250px;
+.outer-container{
+  padding-top: 60px;
+}
+.sidebar-outer{
+  transition: 0.3s;
+  width: $sidebarWidth;
+  min-width: $sidebarWidth;
+  //background: $dark-bg;
+  // border-right:1px solid $black-700;
+}
+.main-container{
+  transition: 0.3s;
+  min-width: calc(100% - 250px);
+  max-width: calc(100% - 250px);
+  width: calc(100% - 250px);
+  padding-top: 20px;
+}
+.don-pager-wrapper{
+  padding-bottom: 40px;
+}
+/* -----------------------------------
+** End Main Content
+-------------------------------------*/
