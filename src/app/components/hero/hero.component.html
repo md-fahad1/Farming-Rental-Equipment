@@ -1,35 +1,32 @@
-<!-- hero.component.html -->
-<section class="bg-success text-white py-5">
-  <div class="container text-center">
-    <div class="row align-items-center">
-      <!-- Hero Text -->
-      <div class="col-lg-6 mb-4 mb-lg-0 text-lg-start">
-        <h1 class="display-4 fw-bold">
-          Rent <span class="text-warning">Farming Equipment</span> Easily
+<!-- app-hero.component.html -->
+<section class="bg-light py-5" style="
+  background: url('https://img.freepik.com/free-photo/tractor-working-countryside-field_1150-12414.jpg') no-repeat center center/cover;
+  min-height: 90vh;">
+  <div class="container h-100 d-flex align-items-center">
+    <div class="row w-100">
+      <div class="col-lg-7 text-white">
+        <!-- Headline -->
+        <h1 class="display-4 fw-bold mb-3">
+          🌾 Affordable Farm Equipment Rentals <br />
+          for Every Farmer
         </h1>
+
+        <!-- Subtext -->
         <p class="lead mb-4">
-          Affordable, reliable, and available near you. Empowering farmers with
-          the tools they need.
+          Cut costs, save time, and get access to modern machinery on demand.  
         </p>
-        <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
-          <a routerLink="/equipment" class="btn btn-warning btn-lg">Explore Equipment</a>
-          <a routerLink="/about" class="btn btn-outline-light btn-lg">Learn More</a>
+
+        <!-- CTA Buttons -->
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#" class="btn btn-success btn-lg">✅ Find Equipment</a>
+          <a href="#" class="btn btn-outline-light btn-lg">🌟 List Your Equipment</a>
         </div>
-      </div>
 
-      <!-- Hero Image -->
-      <div class="col-lg-6">
-        <img src="assets/tractor-hero.png" class="img-fluid rounded shadow" alt="Farming Equipment">
-      </div>
-    </div>
-
-    <!-- Optional Search Form -->
-    <div class="row mt-5">
-      <div class="col-md-8 mx-auto">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search equipment (tractor, harvester)" aria-label="Search">
-          <button class="btn btn-warning" type="submit">Search</button>
-        </form>
+        <!-- Optional Search Bar -->
+        <div class="mt-4 bg-white p-3 rounded shadow d-flex">
+          <input type="text" class="form-control me-2" placeholder="🔍 Search equipment by type or location" />
+          <button class="btn btn-success">Search</button>
+        </div>
       </div>
     </div>
   </div>

@@ -5,6 +5,11 @@ import { HeaderModule } from '../header/header.module';
 import { FooterModule } from '../footer/footer.module';
 
 import { HeroModule } from '../hero/hero.module';
+import { StatsModule } from '../stats/stats.module';
+import { HowItWorksModule } from '../how-it-works/how-it-works.module';
+import { WhyChooseUsModule } from '../why-choose-us/why-choose-us.module';
+import { PopularEquipmentModule } from '../popular-equipment/popular-equipment.module';
+import { TestimonialsModule } from '../testimonials/testimonials.module';
 
 @NgModule({
   declarations: [LayoutComponent],
@@ -12,7 +17,12 @@ import { HeroModule } from '../hero/hero.module';
     CommonModule,
     HeaderModule,
     FooterModule,
-    HeroModule
+    HeroModule,
+    StatsModule,
+    PopularEquipmentModule,
+    HowItWorksModule,
+    WhyChooseUsModule,
+    TestimonialsModule
   ],
   exports: [LayoutComponent],
 })

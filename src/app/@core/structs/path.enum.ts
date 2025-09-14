@@ -1,4 +1,6 @@
 export enum Path {
-    Check = 'check'
+    Check = 'check',
+    SignIn='signin',
+    SignUp ='signup'
     
 }

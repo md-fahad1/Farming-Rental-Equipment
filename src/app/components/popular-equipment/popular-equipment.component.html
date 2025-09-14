@@ -1,0 +1,27 @@
+<!-- app-popular-equipment.component.html -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">🚜 Popular Equipment</h2>
+      <p class="text-muted">Browse the most in-demand farm machinery available for rent.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Equipment Cards (15) -->
+      <!-- Card Template -->
+      <ng-container *ngFor="let equipment of equipments">
+        <div class="col-md-2">
+          <div class="card shadow-sm border-0 h-100">
+            <img [src]="equipment.image" class="card-img-top" [alt]="equipment.name" />
+            <div class="card-body">
+              <h6 class="card-title">{{ equipment.name }}</h6>
+              <p class="card-text text-muted">📍 {{ equipment.location }} | 💰 {{ equipment.price }} BDT / Day</p>
+              <a href="#" class="btn btn-success w-100">Rent Now</a>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>

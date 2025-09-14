@@ -1,16 +1,17 @@
+
 import { Routes } from '@angular/router';
 import { Path } from '../@core/structs/path.enum';
 
 export const PUBLIC_ROUTES: Routes = [
   {
-    path: Path.Check,
+    path: Path.SignIn,
     loadChildren: () =>
-      import('@app/pages/private/check/check.module').then(
-        (m) => m.CheckModule
+      import('@app/pages/public/signin/signin.module').then(
+        (m) => m.SigninModule
       ),
     data: {
-      label: 'Check',
-      name: 'CHECK',
+      label: 'SignIn',
+      name: 'SIGNIN',
     },
     // canActivate: [AuthGuard] // optional
   },
